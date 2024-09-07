@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Shlok Baranwal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            /* Light sky blue */
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 250px;
+            /* Adjust the size */
+            object-fit: cover;
+        }
+
+        .about-section,
+        .projects-section,
+        .education-section,
+        .skills-section,
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2e7d32;
+            /* Dark green */
+        }
+
+        .navbar-brand:hover {
+            color: #1b5e20;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .skill-container,
+        .education-container {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #c8e6c9;
+            /* Light green */
+            border: 2px solid #66bb6a;
+            /* Medium green */
+            border-radius: 25px;
+            font-size: 16px;
+            color: #000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-container {
+            background-color: #f0f4c3;
+            /* Light yellow-green */
+            border-color: #cddc39;
+            /* Lime color */
+        }
+
+        .form-control,
+        .btn {
+            border-radius: 20px;
+        }
+
+        .btn-submit {
+            background-color: #66bb6a;
+            /* Green */
+            color: white;
+        }
+
+        .btn-submit:hover {
+            background-color: #388e3c;
+            /* Darker green */
+        }
+
+        /* Contact form new style */
+        .contact-section {
+            background-color: #f1f8e9;
+            /* Light green */
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            background-color: #f9fbe7;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        .form-control:focus {
+            box-shadow: 0px 0px 5px rgba(102, 187, 106, 0.5);
+            border-color: #66bb6a;
+        }
+
+        .btn-submit {
+            background-color: #66bb6a;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shlok Baranwal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section with Grid Layout -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img src="Shlokpic.jpeg" alt="Shlok Baranwal" class="profile-pic mb-4">
+                </div>
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p class="lead">
+                        Hi, I'm Shlok Baranwal, a final-year Information Science and Engineering student at SDM
+                        Engineering College, Dharwad.
+                        I have a passion for coding, web development, and machine learning, with hands-on experience in
+                        building real-world projects.
+                        My skills include HTML, CSS, JavaScript, Java, Python, React, Data Science, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+     <!-- Projects Section -->
+     <section id="projects" class="projects-section text-center">
+        <div class="container">
+            <h2>Projects</h2>
+            ------------------------------------------------------------
+            ------------------------------------------------------------
+            <br><br>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="brain.png" class="card-img-top" alt="Brain Tumor Detection">
+                        <div class="card-body">
+                            <h5 class="card-title">Brain Tumor Detection System</h5>
+                            <p class="card-text">This project focuses on detecting brain tumors using CNN-based machine learning models.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="pkbd.png" class="card-img-top" alt="PKBD School Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Website for PKBD International</h5>
+                            <p class="card-text">Developed a fully functional website using HTML, CSS, JavaScript, and PHP for PKBD International School.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="smartpay.png" class="card-img-top" alt="Smart Payment Method">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Payment Method</h5>
+                            <p class="card-text">Created an innovative payment method system using advanced data algorithms for secure transactions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="panchayat.png" class="card-img-top" alt="gramin panchayat">
+                        <div class="card-body">
+                            <h5 class="card-title">E-gram panchayat</h5>
+                            <p class="card-text">Designed a website providing comprehensive details about tourism in Lucknow, including historical landmarks and attractions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="food.png" class="card-img-top" alt="Food Ordering Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Ordering Website</h5>
+                            <p class="card-text">Developed a responsive food ordering website featuring 20+ Indian dishes with an intuitive design and seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br><br>
+    <!-- Education Section -->
+    <section id="education" class="education-section text-center">
+        <div class="container">
+            <h1>Education</h1>
+            
+            <br><br><br>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="education-container">
+                    <strong>College: </strong>SDM College of Engineering, Dharwad (2020-2024)<br>
+                    <strong>CGPA: </strong>7.82
+                </div>
+                <div class="education-container">
+                    <strong>10th Grade: </strong>madhyamik Siksha parisad gauhani<br>
+                    <strong>Score: </strong>84.44%
+                </div>
+                <div class="education-container">
+                    <strong>12th Grade: </strong>PKBD International inter college<br>
+                    <strong>Score: </strong>80.33%
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section text-center">
+        <div class="container">
+            <h1>Skills</h1>
+
+            <br><br><br><br>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="skill-container">C++</div><br>
+                <div class="skill-container">C</div><br>
+                <div class="skill-container">Python</div><br>
+                <div class="skill-container">Java</div><br>
+                <div class="skill-container">HTML</div>
+                <div class="skill-container">CSS</div>
+                <div class="skill-container">JavaScript</div>
+                <div class="skill-container">bootstrap</div>
+                <div class="skill-container">data structures</div>
+                <div class="skill-container">algorithm</div>
+                <div class="skill-container">JAVA</div>
+                <div class="skill-container">React</div>
+                <div class="skill-container">SQL</div>
+                <div class="skill-container">Php</div>
+                <div class="skill-container">figma</div>
+                <div class="skill-container">Express-js</div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <br><br><br><br>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <br><br>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Social Media Links -->
+        <div class="social-links text-center mt-4">
+            <a href="https://www.instagram.com/" target="_blank" class="me-3">
+                <img src="instapic.png" alt="Instagram" width="40">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="me-3">
+               <img src="facebook.png" alt="Facebook" width="40">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="me-3">
+                <img src="linkdin.png" alt="LinkedIn" width="40">
+            </a>
+            <a href="https://github.com/" target="_blank">
+               <img src="github.png" alt="GitHub" width="40">
+            </a>
+        </div>
+        </div>
+
+<br><br><br> 
+          <p> Email-baranwal1008@gmail.com</p>
+         <br> <p>Phone-9019344042</p>
+
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        emailjs.init("xTvIpTc9DnrzUAIYG"); // Replace with your EmailJS user ID
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            //const form = event.target;
+
+            emailjs.sendForm('service_qe3c8lj', 'template_6lcoi8g', this)
+                .then(function (response) {
+                    alert('Message sent successfully!');
+                    form.reset();
+                }, function (error) {
+                    console.error('Failed to send message:', error);
+                    alert('Failed to send message. Please try again.');
+                });
+        });
+    </script>
+</body>
+
+</html>
